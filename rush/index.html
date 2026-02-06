@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Page Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Trebuchet MS, serif;
+    background: linear-gradient(135deg, #ffb6c1, #ffc0cb, #ffd1dc);
+    color: #4a1c2a;
+}
+
+/* ===== NAVBAR (สีชมพูฟุ้ง) ===== */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    z-index: 1000;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #5a1a2c;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ff5f8a;
+}
+
+/* ===== SECTION ===== */
+.section {
+    padding: 110px 6% 60px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* ===== PROFILE ===== */
+.profile-photo {
+    width: 180px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+/* ===== TITLES ===== */
+h2 {
+    color: #7a1f3d;
+}
+
+/* ===== LIST ===== */
+ul {
+    padding-left: 20px;
+}
+
+#contact a {
+    color: #ff5f8a;
+    text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== NAVBAR (โครงจากชุดที่สอง) ===== -->
+<nav class="navbar">
+    <a href="#profile">About</a>
+    <a href="#experience">Experience & Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- ===== ABOUT ===== -->
+<div id="profile" class="section">
+    <h2>About Me</h2>
+
+    <img src="https://image.made-in-china.com/365f3j00fCHlJuTKsLra/-.webp"
+         alt="Profile photo"
+         class="profile-photo">
+
+    <h3>Torfun Thalerngkiatileela</h3>
+    <h4>Student, Business Economics and Management</h4>
+
+    <p>[Investor]</p>
+</div>
+
+<!-- ===== EXPERIENCE ===== -->
+<div id="experience" class="section">
+    <h2>Professional Experience & Skills</h2>
+
+    <h3>Experience</h3>
+    <ul>
+        <li>Investor Internship, Liberator Security Co., Ltd.</li>
+    </ul>
+
+    <h3>Skills</h3>
+    <ul>
+        <li>Cooperation</li>
+        <li>Adaptability / Flexibility</li>
+        <li>Leadership</li>
+    </ul>
+</div>
+
+<!-- ===== CONTACT ===== -->
+<div id="contact" class="section">
+    <h2>Contact Me</h2>
+
+    <p>Email:
+        <a href="mailto:68100061@kmitl.ac.th">
+            68100061@kmitl.ac.th
+        </a>
+    </p>
+
+    <p>Instagram:
+        <a href="https://www.instagram.com/g0ldfishbraincells?igsh=MWoxcDhxbzJjZjI5Mw==" target="_blank">
+            g0ldfishbraincells
+        </a>
+    </p>
+</div>
+
+</body>
+</html>
