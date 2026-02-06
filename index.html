@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rush Project | Piscine Discovery 42</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="home-page">
+    <div class="scanline-overlay"></div>
+    <div class="grid-bg"></div>
+
+    <header class="home-header">
+        <nav class="home-nav">
+            <span class="home-nav__brand"><i class="fas fa-terminal"></i> Piscine Discovery</span>
+            <span class="home-nav__tag">Rush // 42 Bangkok</span>
+        </nav>
+    </header>
+
+    <main class="home-hero">
+        <div class="home-hero__content">
+            <div class="home-hero__terminal">
+                <div class="home-hero__terminal-bar">
+                    <span class="terminal-dot terminal-dot--red"></span>
+                    <span class="terminal-dot terminal-dot--yellow"></span>
+                    <span class="terminal-dot terminal-dot--green"></span>
+                    <span class="terminal-bar__title">rush_project.sh</span>
+                </div>
+                <div class="home-hero__terminal-body">
+                    <p><span class="terminal-prompt">root@42:~$</span> ./launch_rush.sh</p>
+                    <p class="terminal-output">[*] Initializing Rush Project...</p>
+                    <p class="terminal-output">[+] Team loaded successfully.</p>
+                    <p class="terminal-output">[+] Select a team member to view their resume:</p>
+                </div>
+            </div>
+            <h1 class="home-hero__title">
+                <span class="home-hero__title-line">Our Team</span>
+                <span class="home-hero__title-line home-hero__title-line--accent">Resumes_</span>
+            </h1>
+        </div>
+
+        <div class="home-cards">
+            <a href="cv1.html" class="home-card home-card--1">
+                <div class="home-card__number">01</div>
+                <div class="home-card__header">
+                    <div class="home-card__img-wrapper">
+                        <img src="https://akeaphan.com/frontend/image/IMG_0767.jpg" alt="Akeaphap Waree" class="home-card__img">
+                    </div>
+                    <div class="home-card__status">
+                        <span class="home-card__status-dot"></span> ONLINE
+                    </div>
+                </div>
+                <div class="home-card__info">
+                    <h2 class="home-card__name">Akeaphap Waree</h2>
+                    <p class="home-card__login"><i class="fas fa-at"></i> akewaree</p>
+                    <p class="home-card__role"><i class="fas fa-shield-halved"></i> Cybersecurity Specialist</p>
+                </div>
+                <div class="home-card__arrow"><i class="fas fa-arrow-right"></i></div>
+            </a>
+
+            <a href="cv2.html" class="home-card home-card--2">
+                <div class="home-card__number">02</div>
+                <div class="home-card__header">
+                    <div class="home-card__img-wrapper">
+                        <img src="https://akeaphan.com/frontend/image/IMG_7608.jpg" alt="Torfun Thalerngkiatileela" class="home-card__img">
+                    </div>
+                    <div class="home-card__status">
+                        <span class="home-card__status-dot"></span> ONLINE
+                    </div>
+                </div>
+                <div class="home-card__info">
+                    <h2 class="home-card__name">Torfun Thalerngkiatileela</h2>
+                    <p class="home-card__login"><i class="fas fa-at"></i> tothaler</p>
+                    <p class="home-card__role"><i class="fas fa-briefcase"></i> Business Economics & Management</p>
+                </div>
+                <div class="home-card__arrow"><i class="fas fa-arrow-right"></i></div>
+            </a>
+        </div>
+    </main>
+
+    <footer class="home-footer">
+        <p><i class="fas fa-skull-crossbones"></i> 2026 Piscine Discovery // 42 Bangkok | <a href="https://github.com/The1975z/rush_project_42" target="_blank" class="home-footer__link"><i class="fab fa-github"></i> GitHub</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

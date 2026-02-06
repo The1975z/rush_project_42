@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akeaphap Waree | Cybersecurity Specialist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="cv-page">
+    <div class="scanline-overlay"></div>
+    <div class="grid-bg"></div>
+
+    <button class="lang-toggle" id="langToggle" title="Switch Language">
+        <svg class="lang-toggle__flag lang-toggle__flag--th" viewBox="0 0 900 600">
+            <rect width="900" height="600" fill="#ED1C24"/>
+            <rect y="100" width="900" height="400" fill="#FFFFFF"/>
+            <rect y="200" width="900" height="200" fill="#241D4F"/>
+        </svg>
+        <svg class="lang-toggle__flag lang-toggle__flag--en" viewBox="0 0 60 30">
+            <clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath>
+            <clipPath id="t"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath>
+            <g clip-path="url(#s)">
+                <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
+                <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/>
+                <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/>
+                <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/>
+                <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
+            </g>
+        </svg>
+        <span class="lang-toggle__text">TH</span>
+    </button>
+
+    <div class="photo-modal" id="photoModal">
+        <div class="photo-modal__backdrop"></div>
+        <div class="photo-modal__content">
+            <div class="photo-modal__header">
+                <div class="photo-modal__terminal-bar">
+                    <span class="terminal-dot terminal-dot--red"></span>
+                    <span class="terminal-dot terminal-dot--yellow"></span>
+                    <span class="terminal-dot terminal-dot--green"></span>
+                    <span class="photo-modal__filename">IMG_0767.jpg</span>
+                </div>
+                <button class="photo-modal__close" id="modalClose"><i class="fas fa-xmark"></i></button>
+            </div>
+            <div class="photo-modal__img-wrapper">
+                <img src="https://akeaphan.com/frontend/image/IMG_0767.jpg" alt="Akeaphap Waree" class="photo-modal__img">
+                <div class="photo-modal__corner photo-modal__corner--tl"></div>
+                <div class="photo-modal__corner photo-modal__corner--tr"></div>
+                <div class="photo-modal__corner photo-modal__corner--bl"></div>
+                <div class="photo-modal__corner photo-modal__corner--br"></div>
+            </div>
+            <div class="photo-modal__info">
+                <p class="photo-modal__name">Akeaphap Waree</p>
+                <p class="photo-modal__sub">akewaree@student.42bangkok.com</p>
+            </div>
+        </div>
+    </div>
+
+    <nav class="cv-nav">
+        <a href="index.html" class="cv-nav__back"><i class="fas fa-arrow-left"></i> Home</a>
+        <div class="cv-nav__links">
+            <a href="#about" class="cv-nav__link"><i class="fas fa-user-secret"></i> <span data-en="About" data-th="เกี่ยวกับ">About</span></a>
+            <a href="#experience" class="cv-nav__link"><i class="fas fa-shield-halved"></i> <span data-en="Experience" data-th="ประสบการณ์">Experience</span></a>
+            <a href="#certs" class="cv-nav__link"><i class="fas fa-certificate"></i> <span data-en="Certs" data-th="ใบรับรอง">Certs</span></a>
+            <a href="#contact" class="cv-nav__link"><i class="fas fa-terminal"></i> <span data-en="Contact" data-th="ติดต่อ">Contact</span></a>
+        </div>
+        <div class="cv-nav__hamburger" id="hamburger1">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="cv-nav__mobile-menu" id="mobileMenu1">
+        <a href="#about" class="cv-nav__mobile-link"><i class="fas fa-user-secret"></i> <span data-en="About" data-th="เกี่ยวกับ">About</span></a>
+        <a href="#experience" class="cv-nav__mobile-link"><i class="fas fa-shield-halved"></i> <span data-en="Experience" data-th="ประสบการณ์">Experience</span></a>
+        <a href="#certs" class="cv-nav__mobile-link"><i class="fas fa-certificate"></i> <span data-en="Certs" data-th="ใบรับรอง">Certs</span></a>
+        <a href="#contact" class="cv-nav__mobile-link"><i class="fas fa-terminal"></i> <span data-en="Contact" data-th="ติดต่อ">Contact</span></a>
+    </div>
+
+    <section id="about" class="cv-hero">
+        <div class="cv-hero__bg-text">akewaree</div>
+        <div class="cv-hero__content">
+            <div class="cv-hero__photo-col">
+                <div class="cv-hero__photo-wrapper">
+                    <img src="https://akeaphan.com/frontend/image/IMG_0767.jpg" alt="Akeaphap Waree" class="cv-hero__photo" id="heroPhoto" style="cursor:pointer">
+                    <div class="cv-hero__photo-frame"></div>
+                    <div class="cv-hero__photo-corner cv-hero__photo-corner--tl"></div>
+                    <div class="cv-hero__photo-corner cv-hero__photo-corner--tr"></div>
+                    <div class="cv-hero__photo-corner cv-hero__photo-corner--bl"></div>
+                    <div class="cv-hero__photo-corner cv-hero__photo-corner--br"></div>
+                </div>
+                <div class="cv-hero__status">
+                    <span class="cv-hero__status-dot"></span>
+                    <span>ACTIVE</span>
+                </div>
+            </div>
+            <div class="cv-hero__text">
+                <div class="cv-hero__terminal-line">
+                    <span class="terminal-prompt">root@42bangkok:~$</span>
+                    <span class="terminal-cmd typing-text">whoami</span>
+                </div>
+                <h1 class="cv-hero__name">Akeaphap<br>Waree</h1>
+                <p class="cv-hero__title"><i class="fas fa-skull-crossbones"></i> <span data-en="Cybersecurity Student & CTF Player" data-th="นักศึกษาด้าน Cybersecurity & ผู้เล่น CTF">Cybersecurity Student & CTF Player</span></p>
+                <p class="cv-hero__bio" data-en="Ardent Cybersecurity student at King Mongkut's Institute of Technology Ladkrabang (KMITL). CTF competitor with team &quot;unknown team&quot;. Owner of CyberStudents community with over 1,500 members. Passionate about ethical hacking, penetration testing, and securing digital infrastructure." data-th="นักศึกษาด้าน Cybersecurity ที่สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง (KMITL) นักแข่ง CTF กับทีม &quot;unknown team&quot; เจ้าของชุมชน CyberStudents ที่มีสมาชิกกว่า 1,500 คน มีความหลงใหลในการแฮ็กอย่างมีจริยธรรม การทดสอบเจาะระบบ และการรักษาความปลอดภัยโครงสร้างพื้นฐานดิจิทัล">Ardent Cybersecurity student at King Mongkut's Institute of Technology Ladkrabang (KMITL). CTF competitor with team "unknown team". Owner of CyberStudents community with over 1,500 members. Passionate about ethical hacking, penetration testing, and securing digital infrastructure.</p>
+                <div class="cv-hero__tags">
+                    <span class="cv-tag"><i class="fas fa-flag"></i> <span data-en="CTF Player" data-th="ผู้เล่น CTF">CTF Player</span></span>
+                    <span class="cv-tag"><i class="fas fa-bug"></i> <span data-en="Bug Hunter" data-th="นักล่าบัค">Bug Hunter</span></span>
+                    <span class="cv-tag"><i class="fas fa-code"></i> <span data-en="Programmer" data-th="โปรแกรมเมอร์">Programmer</span></span>
+                    <span class="cv-tag"><i class="fas fa-users"></i> <span data-en="Community Leader" data-th="ผู้นำชุมชน">Community Leader</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="cv-experience">
+        <div class="cv-experience__header">
+            <div class="section-label"><span class="terminal-prompt">~$</span> cat experience.log</div>
+            <h2 class="cv-section-title"><span data-en="Achievements" data-th="ผลงาน">Achievements</span> <span class="cv-section-title__accent">&</span> <span data-en="Skills" data-th="ทักษะ">Skills</span></h2>
+        </div>
+
+        <div class="cv-experience__grid">
+            <div class="cv-experience__timeline">
+                <div class="cv-exp-item">
+                    <div class="cv-exp-item__date"><i class="fas fa-trophy"></i> 2025</div>
+                    <h3 class="cv-exp-item__role" data-en="Finalist - Hack the Scammer CTF" data-th="รอบชิงชนะเลิศ - Hack the Scammer CTF">Finalist - Hack the Scammer CTF</h3>
+                    <p class="cv-exp-item__company" data-en="Hack the Scammer CTF Finals" data-th="การแข่งขันทักษะทางไซเบอร์ Hack the Scammer CTF รอบชิงชนะเลิศ">Hack the Scammer CTF Finals</p>
+                    <p class="cv-exp-item__desc" data-en="Competed in the Hack the Scammer CTF finals as a member of team &quot;วัยรุ่นบันเตียเมียนเจย&quot;. Demonstrated advanced cybersecurity skills in competitive environment." data-th="เข้าร่วมแข่งขันรอบชิงชนะเลิศ Hack the Scammer CTF ในฐานะสมาชิกทีม &quot;วัยรุ่นบันเตียเมียนเจย&quot; แสดงทักษะด้านความปลอดภัยทางไซเบอร์ขั้นสูงในสภาพแวดล้อมการแข่งขัน">Competed in the Hack the Scammer CTF finals as a member of team "วัยรุ่นบันเตียเมียนเจย". Demonstrated advanced cybersecurity skills in competitive environment.</p>
+                </div>
+                <div class="cv-exp-item">
+                    <div class="cv-exp-item__date"><i class="fas fa-trophy"></i> 2025</div>
+                    <h3 class="cv-exp-item__role" data-en="2nd Place - National Cyber Skills Competition" data-th="รองชนะเลิศอันดับ 1 - แข่งขันฝีมือแรงงานแห่งชาติ">2nd Place - National Cyber Skills Competition</h3>
+                    <p class="cv-exp-item__company" data-en="30th National Skills Competition - Cybersecurity (Team)" data-th="แข่งขันฝีมือแรงงานแห่งชาติ ครั้งที่ 30 สาขาความมั่นคงปลอดภัยไซเบอร์ (ประเภททีม)">30th National Skills Competition - Cybersecurity (Team)</p>
+                    <p class="cv-exp-item__desc" data-en="Runner-up at the 30th National Skills Competition in Cybersecurity (Team category), organized by the Department of Skill Development, Ministry of Labour, at IMPACT Muang Thong Thani, March 21-23, 2025." data-th="รางวัลรองชนะเลิศอันดับที่ 1 ในการแข่งขันฝีมือแรงงานแห่งชาติ ครั้งที่ 30 สาขาความมั่นคงปลอดภัยไซเบอร์ (ประเภททีม) จัดโดยกรมพัฒนาฝีมือแรงงาน กระทรวงแรงงาน ณ ศูนย์แสดงสินค้าและการประชุมอิมแพ็ค เมืองทองธานี วันที่ 21-23 มีนาคม 2568">Runner-up at the 30th National Skills Competition in Cybersecurity (Team category), organized by the Department of Skill Development, Ministry of Labour, at IMPACT Muang Thong Thani, March 21-23, 2025.</p>
+                </div>
+                <div class="cv-exp-item">
+                    <div class="cv-exp-item__date"><i class="fas fa-trophy"></i> 2024</div>
+                    <h3 class="cv-exp-item__role" data-en="1st Place - CTF Competition" data-th="ชนะเลิศ - การแข่งขัน CTF">1st Place - CTF Competition</h3>
+                    <p class="cv-exp-item__company" data-en="Cyber Students' Day 2024" data-th="Cyber Students' Day 2024">Cyber Students' Day 2024</p>
+                    <p class="cv-exp-item__desc" data-en="Captured the top position at CSD CTF 2024. Demonstrated expertise in web exploitation, binary analysis, cryptography, and forensics challenges." data-th="คว้าอันดับ 1 ใน CSD CTF 2024 แสดงความเชี่ยวชาญด้าน Web Exploitation, Binary Analysis, Cryptography และ Forensics">Captured the top position at CSD CTF 2024. Demonstrated expertise in web exploitation, binary analysis, cryptography, and forensics challenges.</p>
+                </div>
+                <div class="cv-exp-item">
+                    <div class="cv-exp-item__date"><i class="fas fa-medal"></i> 2023</div>
+                    <h3 class="cv-exp-item__role" data-en="Top 10 - Hack The Box CTF" data-th="Top 10 - Hack The Box CTF">Top 10 - Hack The Box CTF</h3>
+                    <p class="cv-exp-item__company" data-en="Team 0xf1sh" data-th="ทีม 0xf1sh">Team 0xf1sh</p>
+                    <p class="cv-exp-item__desc" data-en="Competed with 0xf1sh team in HTB CTF 2023. Solved advanced challenges in reverse engineering, pwn, and web exploitation categories." data-th="แข่งกับทีม 0xf1sh ใน HTB CTF 2023 แก้โจทย์ขั้นสูงในหมวด Reverse Engineering, Pwn และ Web Exploitation">Competed with 0xf1sh team in HTB CTF 2023. Solved advanced challenges in reverse engineering, pwn, and web exploitation categories.</p>
+                </div>
+                <div class="cv-exp-item">
+                    <div class="cv-exp-item__date"><i class="fas fa-users"></i> <span data-en="Ongoing" data-th="ดำเนินการอยู่">Ongoing</span></div>
+                    <h3 class="cv-exp-item__role" data-en="Founder & Owner - CyberStudents" data-th="ผู้ก่อตั้ง & เจ้าของ - CyberStudents">Founder & Owner - CyberStudents</h3>
+                    <p class="cv-exp-item__company" data-en="Community of 1,500+ Members" data-th="ชุมชนสมาชิกกว่า 1,500 คน">Community of 1,500+ Members</p>
+                    <p class="cv-exp-item__desc" data-en="Built and manage a thriving cybersecurity community. Create CTF challenges for CSD CTF, mentor aspiring security professionals, and organize knowledge-sharing sessions." data-th="สร้างและดูแลชุมชนด้าน Cybersecurity ที่เติบโตอย่างต่อเนื่อง สร้างโจทย์ CTF สำหรับ CSD CTF เป็นพี่เลี้ยงให้ผู้ที่สนใจด้านความปลอดภัย และจัดกิจกรรมแบ่งปันความรู้">Built and manage a thriving cybersecurity community. Create CTF challenges for CSD CTF, mentor aspiring security professionals, and organize knowledge-sharing sessions.</p>
+                </div>
+            </div>
+
+            <div class="cv-experience__skills">
+                <div class="section-label"><span class="terminal-prompt">~$</span> nmap --skills</div>
+                <h3 class="cv-skills__heading" data-en="Technical Arsenal" data-th="คลังแสงเทคนิค">Technical Arsenal</h3>
+                <div class="cv-skills__grid">
+                    <div class="cv-skill-card">
+                        <i class="fas fa-bug"></i>
+                        <span data-en="Penetration Testing" data-th="ทดสอบเจาะระบบ">Penetration Testing</span>
+                    </div>
+                    <div class="cv-skill-card">
+                        <i class="fas fa-spider"></i>
+                        <span data-en="Web Exploitation" data-th="เจาะระบบเว็บ">Web Exploitation</span>
+                    </div>
+                    <div class="cv-skill-card">
+                        <i class="fas fa-microchip"></i>
+                        <span data-en="Reverse Engineering" data-th="วิศวกรรมย้อนกลับ">Reverse Engineering</span>
+                    </div>
+                    <div class="cv-skill-card">
+                        <i class="fas fa-lock"></i>
+                        <span data-en="Cryptography" data-th="วิทยาการเข้ารหัส">Cryptography</span>
+                    </div>
+                    <div class="cv-skill-card">
+                        <i class="fas fa-magnifying-glass"></i>
+                        <span data-en="Digital Forensics" data-th="นิติวิทยาศาสตร์ดิจิทัล">Digital Forensics</span>
+                    </div>
+                    <div class="cv-skill-card">
+                        <i class="fas fa-network-wired"></i>
+                        <span data-en="Network Security" data-th="ความปลอดภัยเครือข่าย">Network Security</span>
+                    </div>
+                    <div class="cv-skill-card">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="cv-skill-card">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="cv-skill-card">
+                        <i class="fas fa-terminal"></i>
+                        <span>Bash / Shell</span>
+                    </div>
+                    <div class="cv-skill-card">
+                        <i class="fab fa-linux"></i>
+                        <span>Linux</span>
+                    </div>
+                    <div class="cv-skill-card">
+                        <i class="fab fa-docker"></i>
+                        <span>Docker</span>
+                    </div>
+                    <div class="cv-skill-card">
+                        <i class="fas fa-database"></i>
+                        <span>SQL / NoSQL</span>
+                    </div>
+                    <div class="cv-skill-card">
+                        <i class="fas fa-code"></i>
+                        <span>C / C++</span>
+                    </div>
+                    <div class="cv-skill-card">
+                        <i class="fab fa-rust"></i>
+                        <span>Rust</span>
+                    </div>
+                    <div class="cv-skill-card">
+                        <i class="fab fa-golang"></i>
+                        <span>Go</span>
+                    </div>
+                    <div class="cv-skill-card">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML / CSS</span>
+                    </div>
+                    <div class="cv-skill-card">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="cv-skill-card">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                </div>
+
+                <h3 class="cv-skills__heading" style="margin-top: 40px" data-en="Education" data-th="การศึกษา">Education</h3>
+                <div class="cv-education">
+                    <div class="cv-edu-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <span class="cv-edu-item__year">2025 - <span data-en="Present" data-th="ปัจจุบัน">Present</span></span>
+                            <span class="cv-edu-item__title">42 Bangkok - Software Engineering</span>
+                        </div>
+                    </div>
+                    <div class="cv-edu-item">
+                        <i class="fas fa-university"></i>
+                        <div>
+                            <span class="cv-edu-item__year" data-en="Current" data-th="ปัจจุบัน">Current</span>
+                            <span class="cv-edu-item__title" data-en="KMITL - Computer Science, Year 2" data-th="สจล. - วิทยาการคอมพิวเตอร์ ชั้นปีที่ 1">KMITL - Computer Science, Year 2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certs" class="cv-certs">
+        <div class="cv-certs__header">
+            <div class="section-label"><span class="terminal-prompt">~$</span> ls /certs/</div>
+            <h2 class="cv-section-title"><span data-en="Certifications" data-th="ใบรับรอง">Certifications</span> <span class="cv-section-title__accent">&</span> <span data-en="Awards" data-th="รางวัล">Awards</span></h2>
+        </div>
+        <div class="cv-certs__grid">
+            <div class="cv-cert-card">
+                <div class="cv-cert-card__img-wrapper">
+                    <img src="static/image/CTFMEFC.png" alt="CTF MEFC Certificate" class="cv-cert-card__img">
+                </div>
+                <div class="cv-cert-card__info">
+                    <h3>CTF MEFC</h3>
+                    <p data-en="Capture The Flag Competition" data-th="การแข่งขัน Capture The Flag">Capture The Flag Competition</p>
+                </div>
+            </div>
+            <div class="cv-cert-card">
+                <div class="cv-cert-card__img-wrapper">
+                    <img src="static/image/STDIO CTF.png" alt="STDIO CTF Certificate" class="cv-cert-card__img">
+                </div>
+                <div class="cv-cert-card__info">
+                    <h3>STDIO CTF</h3>
+                    <p data-en="CTF Competition Certificate" data-th="ใบรับรองการแข่งขัน CTF">CTF Competition Certificate</p>
+                </div>
+            </div>
+            <div class="cv-cert-card">
+                <div class="cv-cert-card__img-wrapper">
+                    <img src="static/image/TCTT.png" alt="TCTT Certificate" class="cv-cert-card__img">
+                </div>
+                <div class="cv-cert-card__info">
+                    <h3>TCTT</h3>
+                    <p>Thailand Cyber Top Talent</p>
+                </div>
+            </div>
+            <div class="cv-cert-card">
+                <div class="cv-cert-card__img-wrapper">
+                    <img src="static/image/Cert Senior THCTT24_Num93.png" alt="THCTT24 Senior Certificate" class="cv-cert-card__img">
+                </div>
+                <div class="cv-cert-card__info">
+                    <h3>THCTT 2024 Senior</h3>
+                    <p data-en="Thailand Cyber Top Talent - Senior Division" data-th="Thailand Cyber Top Talent - รุ่นอาวุโส">Thailand Cyber Top Talent - Senior Division</p>
+                </div>
+            </div>
+            <div class="cv-cert-card">
+                <div class="cv-cert-card__img-wrapper">
+                    <img src="static/image/Cyber SecurityCC.png" alt="Cyber Security CC Certificate" class="cv-cert-card__img">
+                </div>
+                <div class="cv-cert-card__info">
+                    <h3>Cyber Security CC</h3>
+                    <p data-en="Cybersecurity Certification" data-th="ใบรับรองด้านความปลอดภัยไซเบอร์">Cybersecurity Certification</p>
+                </div>
+            </div>
+            <div class="cv-cert-card">
+                <div class="cv-cert-card__img-wrapper">
+                    <img src="https://akeaphan.com/frontend/image/495369375_1252034493537122_5569631793558289670_n.jpg" alt="National Skills Competition" class="cv-cert-card__img">
+                </div>
+                <div class="cv-cert-card__info">
+                    <h3 data-en="National Skills Competition" data-th="แข่งขันฝีมือแรงงานแห่งชาติ">National Skills Competition</h3>
+                    <p data-en="2nd Place - 30th National Cybersecurity" data-th="รองชนะเลิศอันดับ 1 - ครั้งที่ 30 ไซเบอร์ซิเคียวริตี้">2nd Place - 30th National Cybersecurity</p>
+                </div>
+            </div>
+            <div class="cv-cert-card">
+                <div class="cv-cert-card__img-wrapper">
+                    <img src="https://today-obs.line-scdn.net/0h9dDeLj_TZkt5HHlrm_QZHEFKajpKenxCWy4tLlpPPnhUMHZKQHk1KAsZbWcEJSkYWSkvL15Ia3gEeCAYQg/w1200" alt="Hack the Scammer CTF" class="cv-cert-card__img">
+                </div>
+                <div class="cv-cert-card__info">
+                    <h3>Hack the Scammer CTF</h3>
+                    <p data-en="CTF Finals - Team วัยรุ่นบันเตียเมียนเจย" data-th="รอบชิงชนะเลิศ CTF - ทีมวัยรุ่นบันเตียเมียนเจย">CTF Finals - Team วัยรุ่นบันเตียเมียนเจย</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="cv-contact">
+        <div class="cv-contact__content">
+            <div class="section-label"><span class="terminal-prompt">~$</span> ssh connect@akewaree</div>
+            <h2 class="cv-section-title"><span data-en="Establish" data-th="สร้าง">Establish</span> <span class="cv-section-title__accent" data-en="Connection" data-th="การเชื่อมต่อ">Connection</span></h2>
+            <p class="cv-contact__intro" data-en="Open to cybersecurity projects, CTF teams, and security research collaborations." data-th="พร้อมรับโปรเจกต์ด้าน Cybersecurity, ทีม CTF และการวิจัยด้านความปลอดภัย">Open to cybersecurity projects, CTF teams, and security research collaborations.</p>
+            <div class="cv-contact__links">
+                <a href="mailto:akewaree@student.42bangkok.com" class="cv-contact__link">
+                    <span class="cv-contact__link-icon"><i class="fas fa-envelope"></i></span>
+                    <span>akewaree@student.42bangkok.com</span>
+                </a>
+                <a href="https://github.com/The1975z" target="_blank" class="cv-contact__link">
+                    <span class="cv-contact__link-icon"><i class="fab fa-github"></i></span>
+                    <span>github.com/The1975z</span>
+                </a>
+                <a href="https://akeaphan.com" target="_blank" class="cv-contact__link">
+                    <span class="cv-contact__link-icon"><i class="fas fa-globe"></i></span>
+                    <span>akeaphan.com</span>
+                </a>
+                <a href="https://discord.com" target="_blank" class="cv-contact__link">
+                    <span class="cv-contact__link-icon"><i class="fab fa-discord"></i></span>
+                    <span>Discord - CyberStudents</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="cv-footer">
+        <p><i class="fas fa-skull-crossbones"></i> 2026 Akeaphap Waree | akewaree@42bangkok | Piscine Discovery 42</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
